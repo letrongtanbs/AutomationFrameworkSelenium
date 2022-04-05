@@ -14,7 +14,7 @@
    
    
 ## **YÊU CẦU HỆ THỐNG**
-- JDK 11, 15 (not run with 8, 17, 18)
+- JDK 15 (not run with 8, 17, 18)
 - Chrome Browser, Edge Browser
 - Setup Allure:
    https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons
