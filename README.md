@@ -111,8 +111,8 @@ Note: enabled Allow less secure apps
 
 **8. Read data test form Excel file**
 
-- Create **DataSupplier** on ***src/main/java/anhtester/com/utils/DataProviderUtils.java***
-- Call the name of **DataSupplier** in test cases **@Test
+- Create function with annotaion **DataSupplier** on ***src/main/java/anhtester/com/utils/DataProviderUtils.java***
+- Call the name of **DataSupplier** above in the test cases as DataProvider of TestNG
 
 **9. Base function in library**
 
