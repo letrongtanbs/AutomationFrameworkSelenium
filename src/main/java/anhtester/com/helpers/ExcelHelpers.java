@@ -208,56 +208,6 @@ public class ExcelHelpers {
         return list;
     }
 
-//    public static Object[][] getDataReflection(String ExcelPath, String SheetName, int startRow, int endRow) {
-//
-//        Object[][] data = null;
-//        try {
-//
-//            File f = new File(ExcelPath);
-//
-//            if (!f.exists()) {
-//                f.createNewFile();
-//                System.out.println("File doesn't exist, so created!");
-//            }
-//
-//            fis = new FileInputStream(ExcelPath);
-//            wb = new XSSFWorkbook(fis);
-//            sh = wb.getSheet(SheetName);
-//
-//            int rows = getRowCount();
-//            int columns = getColumnCount();
-//            System.out.println("Row: " + rows + " - Column: " + columns);
-//            data = new Object[endRow - startRow][1];
-//            Hashtable<String, String> table = null;
-//
-//            SignIn signIn = new SignIn();
-//
-//            for (int rowNums = startRow; rowNums < endRow; rowNums++) {
-//                table = new Hashtable<String, String>();
-//                for (int colNum = 0; colNum < columns; colNum++) {
-//
-//                    Field nameField = signIn.getClass().getDeclaredField(getCellData(0, colNum));
-//                    nameField.setAccessible(true);
-//                    nameField.set(signIn, getCellData(rowNums, colNum));
-//
-//                    table.put(getCellData(0, colNum), getCellData(rowNums, colNum));
-//                    data[rowNums - startRow][0] = table;
-//                }
-//            }
-//            System.out.println(signIn.getEmail() + "-" + signIn.getPassword());
-//            System.out.println(data);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (NoSuchFieldException e) {
-//            e.printStackTrace();
-//        } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
-//        return data;
-//    }
-
     public static String getTestCaseName(String sTestCase) throws Exception {
         String value = sTestCase;
         try {
