@@ -25,7 +25,7 @@ public class SignInPage {
         Assert.assertTrue(WebUI.verifyPageUrl(pageUrl), "The url of Sign in page not match.");
         Assert.assertTrue(WebUI.verifyPageTitle(pageTitle), "Tiêu đề trang sign in chưa đúng");
         WebUI.sleep(1);
-        WebUI.setText(ObjectUtils.getLocator("SigninPage.email"), email);
+        WebUI.setText(ObjectUtils.getLocator("SigninPage.email"), email);// ObjectUtils bị null khi gọi
         WebUI.setText(ObjectUtils.getLocator("SigninPage.passwordInput"), password);
         WebUI.clickElement(ObjectUtils.getLocator("SigninPage.signInBtn"));
         WebUI.waitForPageLoaded();
